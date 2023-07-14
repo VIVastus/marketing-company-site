@@ -59,6 +59,7 @@ h1,h2,h3,h4,h5,h6,p,a{border: 2px solid red;} */
 
 /* Margin Utility Classes */ 
 
+.margin   {margin: 5%;}
 .margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
 .margin-l { margin-left: 5%; }
@@ -69,6 +70,7 @@ h1,h2,h3,h4,h5,h6,p,a{border: 2px solid red;} */
 .margin-l-big { margin-left: 10%; }
 .margin-r-big { margin-right: 10%; }
 
+.margin-1   {margin: 1rem;}
 .margin-t-1 { margin-top: 1rem; }
 .margin-b-1 { margin-bottom: 1rem; }
 .margin-l-1 { margin-left: 1rem; }
@@ -87,11 +89,14 @@ h1,h2,h3,h4,h5,h6,p,a{border: 2px solid red;} */
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
+.tall-30{min-height: 30vh;}
+.tall-40{min-height: 40vh;}
 .tall-50{min-height: 50vh;}
 .tall-60{min-height: 60vh;}
 .tall-70{min-height: 70vh;}
 .tall-80{min-height: 80vh;}
 .tall-90{min-height: 90vh;}
+.tall-100{min-height: 100vh;}
 
 
 
@@ -118,6 +123,8 @@ h1,h2,h3,h4,h5,h6,p,a{border: 2px solid red;} */
 .text-right{text-align: right;}
 
 .align-center{align-content:center;}
+
+.border-white{border: solid white 2px;}
 
 .subtle{opacity: 50%; font-size: 0.8rem;}
 
@@ -159,75 +166,57 @@ footer nav a {
     font-size: 0.9rem;
   }
 
-/* Form Styles */
+  /* Form Styles */
 
-form input, 
-form textarea {
+  input, textarea {
+  border-style: solid;
+  border: 2px solid rgb(200, 200, 205);
+  padding: 0.8em;
+  display: block;
   width: 100%;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  border: 2px solid rgb(220,220,220);
-  outline: none;
-  font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  /* vertical-align: top; */
 }
 
-form input:focus,
-form textarea:focus {
-  border-color: teal;
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #e67e22;
+  /* featured color */
 }
 
 textarea {
-  min-height: 3rem;
+  min-height: 7em;
 }
 
-form label {
-  margin-top: 1rem;
+input[type="submit"] {
+  width: auto;
   display: block;
-  color: #6C7A89;
-  font-weight: bold;
 }
 
-form button {
-  background-color:#6C7A89;
-  color: white;
-  border: none;
-  padding: 0.5rem 2rem;
-  letter-spacing: 0.1em;
-  margin: 0.5rem 0;
+.email-signup input {
+  width: 30%;
+  display: inline-block;
+  max-width: 250px;
+  margin-top:1rem;
 }
 
-.form-style-2 input,.form-style-2 textarea {
-    border: 2px solid pink;
-    background-color:pink;
+.email-signup .button-solid {
+  padding: 0.8em;
+  border-radius: 0;
+  font-size: 1rem;
+}
+form .button {
+  width:100%;
+}
+  @media(max-width:768px) {
+   .email-signup input {
+     width: 100%;
+     max-width: 100%;
+   }
+ }
+
     
-}
-  
-.form-style-2 label{
-    color:purple;
-    text-transform:uppercase;
-    letter-spacing:0.1rem;
-  }
-.form-style-2 button{
-    border:2px solid red;
-    background-color:red;
-    font-size:2rem;
-    letter-spacing:0.1rem;
-    font-weight:bold;
-    
-}
-  
-.form-style-2 input:focus,
-.form-style-2  textarea:focus {
-    border-color: red;
-}
-  
-.short-stack{
-    min-height:10vh;
-    width:20%;
-    margin:0;
-    padding:0;
-}
 
 .shadow-for-gray{box-shadow: 16px 16px rgb(48, 47, 47);}
 
@@ -258,6 +247,27 @@ form button {
 .bg-4{background-image: url(images/moon.png);}
 .bg-5{background-image: url(images/sky.png);}
 .bg-astro{background-image: url(images/astronaut\ .png);}
+.bg-advert{
+  background-image: url(images/Chicken_Nuggets.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.bg-world{
+  background-image: url(images/worldmap.png);
+  background-position: center;
+  background-size: cover;
+}
+.bg-logo{
+  background-image: url(images/logo-social.png);
+  background-position: center;
+  background-size: cover;
+}
+.bg-in-touch{
+  background-image: url(images/STS41B-35-1613_-_Bruce_McCandless_II_during_EVA_\(Retouched\)\ \(1\).png);
+  background-position: 50% 30%;
+  background-size: cover;
+
+}
 
 
 

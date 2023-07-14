@@ -22,120 +22,104 @@
     <body>
 
         <!---------------- Header ------------------>
-        <header class=" text-right light-text  grid">
-            <div class="col-2">
+        <header class="text-right  grid bg-white ">
+            <div class="col-1 text-left grid-bottom">
+                <img src="images/starship.png"  height="50px">
+                <p>The Ad <br><span>Space</span></p>
         
             </div>
-            <div class="col-7">
-                <a href="index.html">Home</a>
-                <a href="About.html">About</a>
-                <a href="Partners.html">Partners</a>
-                <a href="Contact.html">Contact us</a>
+            <div class="col-8  grid-left ">
+                <a class="padded-l-2  padded-t-1 " href="index.html">Home</a>
+                <a class="padded-l-2 padded-t-1 "  href="About.html">About</a>
+                <a class="padded-l-2 padded-t-1 "  href="Partners.html">Partners</a>
+                <a class="padded-l-2 padded-t-1 "  href="Contact.html">Contact us</a>
         
             </div>
-            <div class="col-1">
-        
-            </div>
-            <div class="col-2">
+
+            <div class="col-3 grid-right ">
+                <a href="#"><i class="fa-brands fa-twitter fas"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fas"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fas"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest fas"></i></a>
         
             </div>
             
         </header>
 
         <!-- Big cool banner -->
-        <section class="padded grid text-center tall-100 bg-image">
+        <section class="padded grid text-center tall-100 bg-in-touch">
             <div class="col-12-middle">
-                <h3 class=" editable">
-                    <span class="featured-text">Space</span> all around the world
+                <h3 class=" editable f-size-big featured-text">
+                    Let's stay in Touch
                 </h3>
-                <h1 class="font-weight-light editable"> we are in x countries</h1>
             </div>
         </section>
 
 
-        <!------ Form Section  ------>
-        <section class="tall-70">
-            <form class="form-style-2"   action="https://formspree.io/f/mqkvzgvd"method="POST">
-                
-                <label for="_name"> Your Name </label>
-                <input type="text" name="_name" id="_name" placeholder="Name" />
-                
-                <label for="_replyto"> Your Email </label>
-                <input type="email" name="_replyto" id="_replyto" placeholder="Email" />
-                
-                <label for="_image"> Your Meme (PLS SEND MEMES) </label>
-                <input type="file" name="_image" id="_image">
-                
-                <label for="_tel"> Your Telephone number, format is XXX-XX-XXX </label>
-                <input type="tel" name="_tel" id="_tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                
-                
-                <label for="_date"> Your Date of birth</label>
-                <input type="date" name="_date" id="_date" placeholder="04.20.1969"> <!-- How to do the placholder on dates ? like the current date ? -->
-                
-                <label for="_time"> When are you taking this form ?</label>
-                <input type="time" name="_time" id="_time">
-                <!-- How to do the placholder on time ? like the current time ? -->
-                <!--Oh, it is set by default    -->
-                
-                <label for="_color"> Your Favorite color </label>
-                <input class="short-stack" type="color" name="_color" id="_color">
-                
-                
-                <label for="_password"> Tell me which password should i use next</label>
-                <input type="password" name="_password" id="_password">
-
-                <label for="message"> Tell me everything about you... </label>
-                <textarea name="message" id="message" placeholder="Hey I want to learn to code..."> </textarea>
-
-                <button type="submit"> SUBMIT </button>
-                
-                </form> 
-        </section>
 
         <!-- Contact Info Section  -->
         <section class="grid tall-50">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+            <div class="col-6 padded">
+                <h2>Contact us at</h2>
+                <p><strong>Tel:</strong> 1-234-567-89-01</p>
+                <p><strong>Email:</strong> email@example.com</p>
+                <p><strong>Address:</strong> somewhere st, 21 ,Place town, Newfoundland  </p>
+            </div>
+            <div class="col-6">
+
+                    <form class="grid-spaceBetween padded" action="https://formspree.io/hello@company.com" method="POST">
+                      <div class="col-5 margin-b-1">
+                        <input type="text" name="name" placeholder="Your Name">
+                      </div>
+                      <div class="col-5 margin-b-1">
+                        <input type="email" name="_replyto" placeholder="Your Email">
+                      </div>
+                      <div class="col-12">
+                        <textarea placeholder="Your Message" class="mb-4 margin-b-1"></textarea>
+                        <input type="submit" value="Send" class="button">
+                      </div>
+                    </form>
+
+
+            </div>
         </section>
 
-            <!-- Footer -->
+                 <!-- Footer -->
 
-            <footer class="grid bg-dark light-text">
-                <!-- column -->
-                <div class="col-4 ">
-                    <h2 class="logo"> Logo </h2>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-
-                <!-- column -->
-                <div class="col-4 ">
-                    <h4 class="caps"> Our Services </h4>
-                    <nav>
-                    <a href="#"> Lorem ipsum </a>
-                    <a href="#"> Dolor sit </a>
-                    <a href="#"> Consectetur </a>
-                    <a href="#"> Ut enim ad </a>
-                    </nav>
-                </div>
-
-                <!-- column -->
-                <div class="col-4 ">
-                    <h4 class="caps"> Explore </h4>
-                    <nav>
-                    <a href="#"> Lorem ipsum </a>
-                    <a href="#"> Dolor sit </a>
-                    <a href="#"> Consectetur </a>
-                    <a href="#"> Ut enim ad </a>
-                    </nav>
-                </div>
-
-                </div>
-                <div class="col-12-middle "> 
-                    <p class="text-center subtle">Copyright 2023</p>
-                </div>
-            </footer>
+                 <footer class="grid bg-white padded-t-1">
+                    <!-- column -->
+                    <div class="col-4 padded-l">
+                        <img src="images/starship.png"  height="100px">
+                        <p class="f-size-md">The Ad <br><span class="featured-text">Space</span></p>
+                    </div>
+    
+                    <!-- column -->
+                    <div class="col-4 ">
+                        <h4 class="caps"> Our Services </h4>
+                        <nav>
+                        <a href="#"> Lorem ipsum </a>
+                        <a href="#"> Dolor sit </a>
+                        <a href="#"> Consectetur </a>
+                        <a href="#"> Ut enim ad </a>
+                        </nav>
+                    </div>
+    
+                    <!-- column -->
+                    <div class="col-4 ">
+                        <h4 class="caps"> Explore </h4>
+                        <nav>
+                        <a href="#"> Lorem ipsum </a>
+                        <a href="#"> Dolor sit </a>
+                        <a href="#"> Consectetur </a>
+                        <a href="#"> Ut enim ad </a>
+                        </nav>
+                    </div>
+    
+                    </div>
+                    <div class="col-12-middle "> 
+                        <p class="text-center subtle">Copyright 2023</p>
+                    </div>
+                </footer>
     </body>
 
 
